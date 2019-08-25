@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sirisha Reddy</title>
+<meta charset="utf-8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: royalblue;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav button {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change color on hover */
+.topnav button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.column2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.row2:after{
+    content : "";
+    display : table;
+    clear:both; 
+}
+@media screen and (max-width:600px)
+{
+  .column2
+ {
+ width: 80%;
+ }
+}
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 80%;
+  border-left: none;
+  height: 700px;
+  display:none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1> <I>Sirisha Reddy</I></h1>
+</div>
+<!--<div class="topnav">
+  <a href="#">About</a>
+  <a href="#">Professional</a>
+  <a href="#">Contact</a>
+</div> -->
+<div class="topnav">
+  <button class="tablinks" onmouseover="openTab(event, 'About')"><Strong>About</Strong></button>
+  <button class="tablinks" onmouseover="openTab(event, 'Professional')"><Strong>Professional</Strong></button>
+  <button class="tablinks" onmouseover="openTab(event, 'Resume')"><strong>Resume</strong></button>
+</div>
+
+<div id="About" class="tabcontent"  style="display:block">
+ 
+ <p>
+   <div class="row">
+    <div class="column">
+    
+    <p><img src="slogo.jpg"></p>
+  </div>
+  <div class="column">
+    <h2> About Me </h2>
+    <p>I born and brought up in India . I did my bachelors in computer applications and Masters in Information systems in India.After my Marriage move to US.I have 5+ years of experience in SAP BI/BO development and also hold a salesforce app developer certification. I have entry level experience in java and am interested to improve my skills deeper in to coding further.Since last 5 years I took break to take care of my little ones. Now I want to re-launch my career with in-depth coding skills.
+      I believe in hard work and try each and every opportunity without giving up until we see the end result.
+    </p>  </div>
+
+<div class="column">
+<h2> Hobbies </h2>
+ <p>
+My <strong>Interests</strong> other than professional,  I love dance, singing , art work and  I love to spend most of the time with my family. I am an Indian classical dancer and did so many performances . Whenever I get time ,try to experiment in cooking different cuisine foods which are my kids favorites. Being a multi-talented person , always keep myself very busy. 
+</p>
+  </div>
+
+</div>
+</div>
+
+<div id="Professional" class="tabcontent">
+  
+  <p><div class="column">
+      <h2> Experience </h2>
+      <p> 
+       <ul>
+        <li>I hold  Bachelors in computer applications and Masters in Information Systems with GPA – 3.96.
+        I did 5 projects in my college using developer and database tools Java and Oracle . </li>
+        <li>After moving to US, I worked for 5+ years as SAP BI developer at S1 and Mckesson corporation. 
+        In both the companies, got a very good opportunity to implement my developer skills and knowledge extensively.</li>
+        <li>I have good knowledge and got couple of years of experience in core java and also recently got a salesforce developer certificate.
+        Since last 5 years I took break to take care of my little ones. 
+        Now I want to re-launch my career with in-depth coding skills.</li>
+        </ul>
+        </p>
+        </div>
+      <div class = "column">
+      <h2> Education </h2>
+      <p>
+          <ul>
+             <li> Bachelors of Computer Applications </li>
+             <li> Masters in Information Systems </li>
+             <li> Salesforce developer(App Builder) certification</li>
+          </ul>
+        </p>
+       </div>
+       <div class= "column">
+       <h2> Technical Knowledge </h2>
+       <p>
+        <ul>
+        <li>BusinessObjects XI R3.1/R2/R1</li>  
+        <li>Windows, Unix</li>
+        <li>Html, Informatica</li>
+        <li> Java, QTP</li>
+        <li> Please refer to my <a href= "/Users/ggg0605/Desktop/Web Projects/Aboutmeproject/SirishaBasireddiResume.docx">Resume</a> for more Information</li>
+        </ul>
+        </p>
+        </div>
+    </p>
+</div>
+
+<div id="Resume" class="tabcontent">
+    <div class="row2">
+        <div class="column2">
+        <img src = "/Users/ggg0605/Desktop/Web Projects/Aboutmeproject/SirishaBasireddiResume (1).jpg/Resumepage1.png">
+        </div>
+        
+        <div class="column">
+                <img src = "/Users/ggg0605/Desktop/Web Projects/Aboutmeproject/SirishaBasireddiResume (1).jpg/resume2page.png">
+            </div>
+      </div>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+</body>
+</html>
